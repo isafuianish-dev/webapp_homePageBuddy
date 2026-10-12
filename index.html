@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page Buddy</title>
+<link rel="icon" type="image/png" href="media/favicon.png">
+<link rel="stylesheet" href="https://isafuianish-dev.github.io/webapp_cdnBuddy/css/tokens.css">
+<link rel="stylesheet" href="https://isafuianish-dev.github.io/webapp_cdnBuddy/css/base.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://isafuianish-dev.github.io/webapp_cdnBuddy/js/theme-init.js" data-app="webapp_homePageBuddy"></script>
+</head>
+<body>
+<div class="app">
+  <canvas class="birthday-canvas" id="birthdayCanvas" aria-hidden="true"></canvas>
+  <canvas class="music-bg-canvas" id="musicBgCanvas" aria-hidden="true"></canvas>
+
+  <a id="btnAppsLibrary" class="apps-btn" href="https://isafuianish-dev.github.io/webapp_myAppsBuddy/" title="Apps Library" aria-label="Apps Library"></a>
+  <button type="button" id="btnSettings" class="settings-btn" title="Settings" aria-label="Settings"></button>
+
+  <div class="top-left-bar">
+    <button type="button" id="weatherWidget" class="weather-widget" title="Set weather location" aria-label="Weather">
+      <span class="weather-time" id="weatherTime"></span>
+      <span class="weather-sep">|</span>
+      <span class="weather-info" id="weatherInfo"></span>
+    </button>
+
+    <div class="favorites-section" id="favoritesSection">
+      <div class="favorites-grid" id="favoritesGrid"></div>
+    </div>
+  </div>
+
+  <main class="home">
+    <div class="home-center">
+      <form class="search-form" id="searchForm">
+        <button type="button" class="engine-selector" id="engineSelector" title="Click to switch search engine">
+          <span class="engine-stack" id="engineStack"></span>
+        </button>
+        <input type="text" id="searchInput" class="search-box" placeholder="Search the web..." autocomplete="off" autofocus>
+        <button type="submit" class="search-submit-btn" id="searchSubmitBtn" aria-label="Search"></button>
+        <div class="search-history" id="searchHistory"></div>
+      </form>
+    </div>
+
+    <div class="tasks-section" id="tasksSection">
+      <div class="task-list" id="taskList"></div>
+      <div class="task-add-row">
+        <input type="text" id="taskInput" class="form-control task-input" placeholder="What are you focused on today?" autocomplete="off">
+        <button type="button" class="task-add-btn" id="taskAddBtn" aria-label="Add task"></button>
+        <button type="button" class="tasks-collapse-btn" id="tasksCollapseBtn" aria-label="Collapse tasks"></button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="quote-block" id="quoteBlock">
+    <p class="quote-text" id="quoteText"></p>
+    <div class="quote-footer">
+      <span class="quote-author-swap" id="quoteAuthorSwap">
+        <span class="quote-author" id="quoteAuthor"></span>
+        <button type="button" class="quote-refresh" id="quoteRefreshBtn" title="New quote" aria-label="New quote"></button>
+      </span>
+    </div>
+  </footer>
+
+  <div class="utilities-bar" id="utilitiesBar">
+    <div class="util-tool" id="toolStopwatch"></div>
+    <div class="util-tool" id="toolTimer"></div>
+    <div class="util-tool" id="toolMusic"></div>
+    <audio id="focusAudio" preload="none" loop></audio>
+  </div>
+
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+</div>
+
+<script src="https://isafuianish-dev.github.io/webapp_cdnBuddy/js/utils.js"></script>
+<script src="https://isafuianish-dev.github.io/webapp_cdnBuddy/js/icons.js"></script>
+<script src="https://isafuianish-dev.github.io/webapp_cdnBuddy/js/modal.js"></script>
+<script src="https://isafuianish-dev.github.io/webapp_cdnBuddy/js/theme.js"></script>
+<script src="https://isafuianish-dev.github.io/webapp_cdnBuddy/js/settings.js"></script>
+<script src="https://isafuianish-dev.github.io/webapp_cdnBuddy/js/markdown.js"></script>
+<script src="https://isafuianish-dev.github.io/webapp_cdnBuddy/js/manual.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
